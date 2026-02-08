@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VDI Tacógrafos</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+<!-- ===== HEADER / MENU ===== -->
+<header class="header fixed-top">
+    <div class="site-container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="VDI Tacógrafos">
+            </a>
+
+            <!-- Toggle mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuVDI">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="menuVDI">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#quemsomos">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#unidades">Unidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a href="https://wa.me/5511942532077?text=Olá!%20quero%20fazer%20um%20orçamento." target="_blank" class="btn btn-whatsapp">
+                            WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+<!-- ===== HERO PRODUTOS ===== -->
+<section class="hero hero-produtos">
+    <div class="hero-overlay"></div>
+
+     <div class="site-container">
+        <div class="hero-content">
+        <h1>Produtos VDI Tacógrafos</h1>
+        <p>
+            Equipamentos, peças e acessórios certificados para tacógrafos, 
+            painéis automotivos e instrumentos de medição, com qualidade 
+            e confiabilidade reconhecidas no mercado.
+        </p>
+    </div>
+       </div>
+</section>
+
+
+<!-- ===== PRODUTOS ===== -->
+<section class="products-page">
+    <div class="site-container">
+
+        <!-- Título -->
+        <div class="section-header">
+            <span class="section-subtitle">Produtos</span>
+            <h2 class="section-title">Itens Diversos</h2>
+            <p class="section-description">
+                A VDI Tacógrafos oferece uma linha completa de produtos automotivos
+                e instrumentos de medição, selecionados para atender com eficiência 
+                veículos de linha leve e linha pesada, nacionais e importados.
+            </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="products-grid">
+
+            <!-- CARD -->
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/disco-diagrama-vdo.webp')">
+                    <img src="img/produtos/disco-diagrama-vdo.webp" alt="Disco Diagrama VDO">
+                </div>
+                <h5>Disco Diagrama VDO</h5>
+                <!--<p>Compatível com tacógrafos analógicos, alta precisão.</p>-->
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/agulha-tacografo-vdo.webp')">
+                    <img src="img/produtos/agulha-tacografo-vdo.webp" alt="Agulha Tacógrafo">
+                </div>
+                <h5>Agulha Tacógrafo</h5>
+               <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/conjunto-tacografo.webp')">
+                    <img src="img/produtos/conjunto-tacografo.webp" alt="Conjunto Tacógrafo">
+                </div>
+                <h5>Conjunto Tacógrafo</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/conjunto-magnetico.webp')">
+                    <img src="img/produtos/conjunto-magnetico.webp" alt="Conjunto Magnético">
+                </div>
+                <h5>Conjunto Magnético</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/placa-de-velocidade.webp')">
+                    <img src="img/produtos/placa-de-velocidade.webp" alt="Placa de Velocidade">
+                </div>
+                <h5>Placa de Velocidade</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>  
+            
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/sensores.webp')">
+                    <img src="img/produtos/sensores.webp" alt="Sensores">
+                </div>
+                <h5>Sensores</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>  
+            
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/transmissao-angular.webp')">
+                    <img src="img/produtos/transmissao-angular.webp" alt="Transmissão Angular">
+                </div>
+                <h5>Transmissão Angular</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>  
+
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/alternador.webp')">
+                    <img src="img/produtos/alternador.webp" alt="Alternador">
+                </div>
+                <h5>Alternador</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>   
+            
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/motor-de-partida.webp')">
+                    <img src="img/produtos/motor-de-partida.webp" alt="Motor de Partida">
+                </div>
+                <h5>Motor de Partida</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>     
+            
+           <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/rodoar.webp')">
+                    <img src="img/produtos/rodoar.webp" alt="Rodoar">
+                </div>
+                <h5>Rodoar</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>  
+
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/painel-rodoar.webp')">
+                    <img src="img/produtos/painel-rodoar.webp" alt="Painel Rodoar">
+                </div>
+                <h5>Painel Rodoar</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>   
+            
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/climatizadores.webp')">
+                    <img src="img/produtos/climatizadores.webp" alt="Climatizadores">
+                </div>
+                <h5>Climatizadores</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>          
+            
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/barrica-de-agua.webp')">
+                    <img src="img/produtos/barrica-de-agua.webp" alt="Barrida de Água">
+                </div>
+                <h5>Barrida de Água</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>     
+            
+           <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/tanque-de-combustivel.webp')">
+                    <img src="img/produtos/tanque-de-combustivel.webp" alt="Tanque de Combustível">
+                </div>
+                <h5>Tanque de Combustível</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>  
+
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/pistola-de-ar.webp')">
+                    <img src="img/produtos/pistola-de-ar.webp" alt="Pistola de Ar">
+                </div>
+                <h5>Pistola de Ar</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>   
+            
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/retrovisores.webp')">
+                    <img src="img/produtos/retrovisores.webp" alt="Retrovisores">
+                </div>
+                <h5>Retrovisores</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>     
+            
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/baterias-automotivas.webp')">
+                    <img src="img/produtos/baterias-automotivas.webp" alt="Baterias Automotivas">
+                </div>
+                <h5>Baterias Automotivas</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>     
+            
+           <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/alarme-automotivo.webp')">
+                    <img src="img/produtos/alarme-automotivo.webp" alt="Alarme Automotivo">
+                </div>
+                <h5>Alarme Automotivo</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>  
+
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/som-automotivo.webp')">
+                    <img src="img/produtos/som-automotivo.webp" alt="Som Automotivo">
+                </div>
+                <h5>Som Automotivo</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>   
+            
+            <div class="product-card">
+                <div class="product-image"
+                     data-bs-toggle="modal"
+                     data-bs-target="#modalImagemProduto"
+                     onclick="abrirImagem('img/produtos/tapete-automotivo.webp')">
+                    <img src="img/produtos/tapete-automotivo.webp" alt="Tapete Automotivo">
+                </div>
+                <h5>Tapete Automotivo</h5>
+                <!--<p>Leitura precisa e alta durabilidade.</p>-->
+            </div>              
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== MODAL AMPLIAR IMAGEM ===== -->
+<div class="modal fade" id="modalImagemProduto" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content product-modal">
+            <button type="button"
+                class="btn-close btn-close-white ms-auto me-3 mt-3"
+                data-bs-dismiss="modal"
+                aria-label="Fechar"></button>
+
+            <div class="modal-body text-center p-4">
+                <img id="modalImagemSrc" src="" alt="Produto ampliado" class="img-fluid rounded-4">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--CTA Final-->
+<section id="cta-final" class="cta-final-section">
+    <div class="cta-overlay"></div>
+
+    <div class="site-container">
+        <div class="cta-content">
+
+            <div class="cta-text">
+                <h2>Por que escolher a VDI Tacógrafos?</h2>
+
+                <ul class="cta-list">
+                    <li>Empresa com longa trajetória e presença consolidada</li>
+                    <li>Assistência técnica credenciada pelo Inmetro</li>
+                    <li>Equipe treinada e especializada</li>
+                    <li>Atendimento completo em tacógrafos e painéis</li>
+                    <li>Produtos e serviços certificados e atualizados conforme normas</li>
+                </ul>
+
+                <p class="cta-highlight">
+                    VDI Tacógrafos – Segurança, precisão e tranquilidade para rodar dentro da lei.
+                </p>
+
+                <a href="https://wa.me/5511942532077?text=Olá!%20quero%20fazer%20um%20orçamento." target="_blank" class="cta-button">
+                    Fale com a gente no WhatsApp agora!
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer id="contato" class="footer">
+
+    <!-- Parte superior -->
+    <div class="footer-top">
+        <div class="site-container footer-grid">
+
+            <!-- Unidades (3 colunas) -->
+            <div class="footer-col footer-unidades-col">
+                <h4>Unidades VDI Tacógrafos</h4>
+
+                <div class="footer-unidades-grid">
+
+                    <ul class="footer-list">
+                        <li>
+                            <strong>Cotia (Matriz)</strong><br>
+                            R. Prof. José Barreto, 915 – Loja 1<br>
+                            Jardim Dinorah – Cotia/SP<br>
+                            Tel: (11) 0000-0000
+                        </li>
+
+                        <li>
+                            <strong>Cotia (Matriz)</strong><br>
+                            R. Prof. José Barreto, 915 – Loja 2<br>
+                            Jardim Dinorah – Cotia/SP<br>
+                            Tel: (11) 0000-0000
+                        </li>
+
+                        <li>
+                            <strong>Embu das Artes</strong><br>
+                            Estr. do Gramado, 661<br>
+                            Jardim Magali – Embu das Artes/SP<br>
+                            Tel: (11) 0000-0000
+                        </li>
+                       
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <strong>Vargem Grande Paulista</strong><br>
+                            Rod. Bunjiro Nakao, 46335<br>
+                            Jardim Margarida – VGP<br>
+                            Tel: (11) 0000-0000
+                        </li>
+
+                        <li>
+                            <strong>São Paulo</strong><br>
+                            R. Poema dos Olhos, 77<br>
+                            Jardim São Jorge – São Paulo/SP<br>
+                            Tel: (11) 0000-0000
+                        </li>
+
+                        <li>
+                            <strong>Barueri</strong><br>
+                            Av. Paraguassú, 90<br>
+                            Jardim Alberto – Barueri/SP<br>
+                            Tel: (11) 0000-0000
+                        </li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <strong>Santo Amaro</strong><br>
+                            R. Marcílio Dias, 148<br>
+                            Socorro – São Paulo/SP<br>
+                            Tel: (11) 0000-0000
+                        </li>
+
+                        <li>
+                            <strong>Campinas</strong><br>
+                            R. Dona Concheta Pádula, 110<br>
+                            Jardim Aurélia – Campinas/SP<br>
+                            Tel: (19) 0000-0000
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Redes sociais (4ª coluna) -->
+            <div class="footer-col footer-social-col">
+                <h4>Siga-nos nas redes sociais</h4>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Parte inferior -->
+    <div class="footer-bottom">
+        <div class="site-container">
+            <p>© <span id="ano"></span> VDI Tacógrafos. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS Modal -->
+<script>
+function abrirImagem(src) {
+    document.getElementById("modalImagemSrc").src = src;
+}
+</script>
+
+<!-- Bootstrap JS -->
+
+<script>
+document.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+
+    if (window.scrollY > 80) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+</script>
+
+</body>
+</html>
+
