@@ -677,25 +677,23 @@ section {
  ======== UNIDADES ======== 
  =========================*/
 
-.localizacao-section {
-    padding: 120px 0;
-    background-color: #ffffff;
-}
-
-/* Grid */
+/* Grid padrão continua existindo */
 .localizacao-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 70px;
     justify-content: center;
 }
 
-/* Card */
+/* Grid com apenas 2 cards */
+.localizacao-grid-2 {
+    grid-template-columns: repeat(2, minmax(280px, 420px));
+}
+
 .localizacao-card {
     background: #e5eaf7;
     border-radius: 20px;
-    padding: 35px 30px;
+    padding: 30px;
     text-align: center;
     text-decoration: none;
     box-shadow: 0 15px 35px rgba(0,0,0,0.08);
@@ -704,49 +702,40 @@ section {
     overflow: hidden;
 }
 
-/* Linha decorativa */
-.localizacao-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    width: 100%;
-    background: linear-gradient(90deg, #15499a, #fecc08);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-}
-
-.localizacao-card:hover::before {
-    transform: scaleX(1);
-}
-
 .localizacao-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 }
 
-/* Título */
-.localizacao-card h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #282828;
-    margin-bottom: 12px;
-}
-
-/* Endereço */
-.localizacao-card p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5;
+.localizacao-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 
-/* Link */
+.localizacao-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.localizacao-card:hover .localizacao-img img {
+    transform: scale(1.06);
+}
+
+.localizacao-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #282828;
+    margin-bottom: 18px;
+}
+
 .localizacao-link {
     display: inline-block;
-    padding: 10px 26px;
+    padding: 12px 28px;
     border-radius: 50px;
     background-color: #fecc08;
     color: #282828;
@@ -759,51 +748,16 @@ section {
     color: #fff;
 }
 
-.localizacao-img {
-    width: 100%;
-    height: 120px;
-    border-radius: 14px;
-    overflow: hidden;
-    margin-bottom: 18px;
-}
-
-.localizacao-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-/* Hover imagem */
-.localizacao-card:hover .localizacao-img img {
-    transform: scale(1.05);
-}
-.localizacao-img::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.01);
-}
-
-/*===== Responsivo Unidades =====*/
-
-@media (max-width: 1200px) {
-    .localizacao-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    .localizacao-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .localizacao-grid {
+@media (max-width: 768px) {
+    .localizacao-grid-2 {
         grid-template-columns: 1fr;
     }
+
+    .localizacao-img {
+        height: 180px;
+    }
 }
+
 
 
 /* ======================= 
@@ -919,42 +873,28 @@ section {
     padding: 80px 0 60px;
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 60px;
-}
 
 /* Grid interno das unidades */
-.footer-unidades-grid {
+.footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
 }
 
-.footer-col h4 {
+/* Bloco da unidade */
+.footer-unidade h4 {
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 25px;
+    color: var(--amarelo-detalhe);
+    margin-bottom: 12px;
 }
 
-/* Lista */
-.footer-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-list li {
+.footer-unidade p {
     font-size: 14px;
     line-height: 1.6;
-    margin-bottom: 20px;
     color: #e6e6e6;
-}
-
-.footer-list strong {
-    color: #fecc08;
-    font-weight: 600;
+    margin: 0;
 }
 
 /* Redes sociais */
